@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/Css/style.css">
+    <link rel="stylesheet" href="./assets/Css/responsive.css">
+    <script src="https://kit.fontawesome.com/3cd2c644aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="swap">
+        <header style="border-bottom: 2px solid pink;padding-bottom: 20px;">
+            <div class="container row">
+                <div class="col col-half-left logo-shop">
+                    <a href="#">
+                        <img src="https://matpetfamily.com/wp-content/uploads/2019/11/m%E1%BA%ADt-pet-logo-300x297.png" alt="">
+                    </a>
+                </div>
+                <div class="col col-half-right header-main">
+                    <div class="header-top">
+                        <div class="nav">
+                            <ul id="main-nav">
+                                <li class="hihi active-li"><a class="haha" href="#">TRANG CHỦ</a></li>
+                                <li class="hihi"><a class="haha" href="#">THÚ CƯNG</a></li>
+                                <li class="hihi"><a class="haha" href="#">PHỤ KIỆN</a></li>
+                                <li class="hihi"><a class="haha" href="#">DỊCH VỤ</a></li>
+                                <li class="hihi"><a class="haha" href="#">GIỚI THIỆU</a></li>
+                                <li class="hihi"><a class="haha" href="#">LIÊN HỆ</a></li>
+                            </ul>                 
+                        </div>
+                        <div class="cart">
+                            <a href="#">
+                                <i style="font-size: 20px;color: white;" class="fa-solid fa-cart-shopping"></i>
+                                <strong style="float: right;padding-left: 8px;">Giỏ hàng</strong>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                        <img src="https://matpetfamily.com/wp-content/uploads/2019/11/slider_1.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <img src="https://matpetfamily.com/wp-content/uploads/2019/11/slider_3.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <img src="https://matpetfamily.com/wp-content/uploads/2019/11/slider_4.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="https://matpetfamily.com/wp-content/uploads/2019/11/slider_2.jpg" style="width:100%">
+                            </div>
+                    
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div class="subnav">
+                        <div style="width: 30%;" class="dropdown">
+                            <button class="dropbtn">All Categories</button>
+                            <div class="dropdown-content">
+                              <a href="#">Link 1</a>
+                              <a href="#">Link 2</a>
+                              <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div style="width: 60%;" class="middle">
+                            <input type="text" placeholder="Tìm kiếm...">
+                        </div>
+                        <div style="width: 10%;" class="right">
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </header>
+        <div id="content">
+            <div class="section">
+                <div class="row">
+                    <div class="col col-half-left nav-items">
+                        <p>DANH MỤC SẢN PHẨM</p>
+                        <ul>
+                            <li><a href="#">Balo</a></li>
+                            <li><a href="#">Cát Vệ Sinh</a></li>
+                            <li><a href="#">Chuồng</a></li>
+                            <li><a href="#">Danh Mục Cún</a></li>
+                            <li><a href="#">Danh Mục Mèo</a></li>
+                            <li><a href="#">Dây vòng cổ</a></li>
+                            <li><a href="#">Dịch vụ</a></li>
+                            <li><a href="#">Mỹ Phẩm & Làm Đẹp</a></li>
+                            <li><a href="#">Nệm</a></li>
+                            <li>
+                                <a href="#">
+                                    Phụ Kiện
+                                    <ul>
+                                        <li><a href="#">Áo</a></li>
+                                        <li><a href="#">Bàn Cào</a></li>
+                                        <li><a href="#">Bát</a></li>
+                                        <li><a href="#">Dây Dắt</a></li>
+                                        <li><a href="#">Đồ Chơi</a></li>
+                                        <li><a href="#">Khay vệ sinh</a></li>
+                                        <li><a href="#">Vòng cổ</a></li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li><a href="#">Thực phẩm</a></li>
+                            <li><a href="#">Túi vận chuyển</a></li>
+                        </ul>
+                        <p>GIÁ</p>
+                        <div style="margin-top: 20px;" id="slider" class="slider"></div>
+                        <p>Start: <span id="start"></span></p>
+                        <p>End: <span id="end"></span></p>
+                    </div>
+                    <div class="col col-half-right">
+                        <h2 style="padding-left: 40px;">PHỤ KIỆN</h2>
+                        <div class="selection">
+                            <span>Sắp xếp: </span>
+                            <div style="display: inline-block;" class="selection-box">
+                                <form method="get">
+                                    <select style="border: 1px solid #ddd;padding: 8px 12px;" name="orderby" class="orderby">
+                                        <option value="popularity">Sắp xếp theo độ phổ biến</option>
+                                        <option value="rating">Sắp xếp theo điểm rating</option>
+                                        <option value="date">Sắp xếp theo sản phẩm mới</option>
+                                        <option value="price">Sắp xếp theo giá : thấp đến cao</option>
+                                        <option value="price-desc">Sắp xếp theo giá : cao đến thấp</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <span>Số sản phẩm: </span>
+                            <div style="display: inline-block;" class="selection-box">
+                                <form method="get">
+                                    <select style="border: 1px solid #ddd;padding: 8px 12px;" name="orderby" class="orderby">
+                                        <option value="number">16</option>
+                                        <option value="number">10</option>
+                                        <option value="number">9</option>
+                                        <option value="number">12</option>
+                                        <option value="number">18</option>
+                                        <option value="number">24</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <span>Chế độ hiển thị: </span>
+                            <button class="btn active-li"><i class="fa-solid fa-table-cells-large"></i></button>
+                            <button class="btn"><i class="fa fa-bars"></i></button>
+                        </div>
+                        <div style="display: inline-block;padding-left: 32px;" class="items">
+                            <div class="iphonelist">
+                                <div class="itemsgird3">
+                                    <div class="itemsbox">
+                                        <div class="productitems">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/03/f67a78aad21041098fc2ad40e8bb75e2_tplv-o3syd03w52-origin-jpeg-1-300x300.jpeg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:#</p>
+                                                <h3 class="producttittle">ĐỆM NGỒI Ô TÔ</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">750.000₫</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itemsbox">
+                                        <div class="productitems">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/03/a669a615f1184b158eb46b7a681aa849_tplv-o3syd03w52-origin-jpeg-300x300.jpeg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:#</p>
+                                                <h3 class="producttittle">YẾM HỌA TIẾT CUTE</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">50.000₫</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itemsbox">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/03/2692415fa3b84c8f83babbe02ebd6361_tplv-o3syd03w52-origin-jpeg-e1679575580960-300x300.jpeg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:#</p>
+                                                <h3 class="producttittle">MŨ CUTE CHO BOSS YÊU</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">60.000₫</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="itemsgird3">
+                                    <div class="itemsbox">
+                                        <div class="productitems">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/03/1545ccc885c74e2f90ea3970ddcf4768_tplv-o3syd03w52-origin-jpeg-1-300x300.jpeg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:#</p>
+                                                <h3 class="producttittle">ĐỆM Ô TÔ GHẾ SAU</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">1.200.000₫</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itemsbox">
+                                        <div class="productitems">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/03/3622cc7a7d204a6da194fb6a50b8cfc4_tplv-o3syd03w52-origin-jpeg-300x300.jpeg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:#</p>
+                                                <h3 class="producttittle">CÁT ĐẬU NÀNH MISO</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">140.000₫</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itemsbox">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/02/91f4d2fb97144d4a1405-1-e1677126197582-300x300.jpg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:#</p>
+                                                <h3 class="producttittle">PATE THỨC ĂN ƯỚT</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">25.000₫</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="itemsgird3">
+                                    <div class="itemsbox">
+                                        <div class="productitems">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/02/06566661238ef9d0a09f-e1677126086368-300x300.jpg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:#</p>
+                                                <h3 class="producttittle">PATE THỨC ĂN ƯỚT</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">25.000₫</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itemsbox">
+                                        <div class="productitems">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/02/8053ab92ee7d34236d6c-2-e1677125844189-300x300.jpg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:#</p>
+                                                <h3 class="producttittle">NUTRIENCE SUBZERO</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">190.000₫ - 1.680.000₫</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itemsbox">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/02/ceba72c0a12f7b71223e-1-300x300.jpg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:#</p>
+                                                <h3 class="producttittle">NUTRIENCE SUBZERO</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">180.000₫ - 1.400.000₫</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="itemsgird3">
+                                    <div class="itemsbox">
+                                        <div class="productitems">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/02/93a64c1025feffa0a6ef-e1677125403893-300x300.jpg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:#</p>
+                                                <h3 class="producttittle">ZESTY PAWS-WILD ALASKA</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">250.000₫ - 1.700.000₫</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itemsbox">
+                                        <div class="productitems">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/02/674f6bf857d08d8ed4c1-1-300x300.jpg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:#</p>
+                                                <h3 class="producttittle">VALI TRONG SUỐT</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">1.200.000₫</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itemsbox">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/02/172f59bc7e88a4d6fd99-e1676696314661-300x300.jpg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:#</p>
+                                                <h3 class="producttittle">GIƯỜNG CUTE CHO BOSS</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">1.500.000₫</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="itemsgird3">
+                                    <div class="itemsbox">
+                                        <div class="productitems">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/02/164020e867c8bd96e4d9-300x300.jpg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:#</p>
+                                                <h3 class="producttittle">BÁT NHỰA TRE MẬT PET</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">90.000₫</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itemsbox">
+                                        <div class="productitems">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/02/0ed7e112533d8963d02c-300x300.jpg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:#</p>
+                                                <h3 class="producttittle">SỮA BỘT ESBILAC CÚN</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">1.400.000₫</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itemsbox">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2022/12/548466bd61b3b9ede0a2-e1671702851319-300x300.jpg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:#</p>
+                                                <h3 class="producttittle">TOMLYN-IMMUNE SUPPORT</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">650.000₫</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="itemsgird3">
+                                    <div class="itemsbox">
+                                        <div class="productitems">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2022/12/4c416242654cbd12e45d-e1671702664658-300x300.jpg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:#</p>
+                                                <h3 class="producttittle">PETHONESTY</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">980.000₫</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="Project.js"></script>
+</body>
+</html>

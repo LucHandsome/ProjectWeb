@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/Css/style.css">
+    <link rel="stylesheet" href="./assets/Css/responsive.css">
+    <script src="https://kit.fontawesome.com/3cd2c644aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="swap">
+        <header style="border-bottom: 2px solid pink;padding-bottom: 20px;">
+            <div class="container row">
+                <div class="col col-half-left logo-shop">
+                    <a href="#">
+                        <img src="https://matpetfamily.com/wp-content/uploads/2019/11/m%E1%BA%ADt-pet-logo-300x297.png" alt="">
+                    </a>
+                </div>
+                <div class="col col-half-right header-main">
+                    <div class="header-top">
+                        <div class="nav">
+                            <ul id="main-nav">
+                                <li class="hihi active-li"><a class="haha" href="#">TRANG CHỦ</a></li>
+                                <li class="hihi"><a class="haha" href="#">THÚ CƯNG</a></li>
+                                <li class="hihi"><a class="haha" href="#">PHỤ KIỆN</a></li>
+                                <li class="hihi"><a class="haha" href="#">DỊCH VỤ</a></li>
+                                <li class="hihi"><a class="haha" href="#">GIỚI THIỆU</a></li>
+                                <li class="hihi"><a class="haha" href="#">LIÊN HỆ</a></li>
+                            </ul>
+                        </div>
+                        <div class="cart">
+                            <a href="#">
+                                <i style="font-size: 20px;color: white;" class="fa-solid fa-cart-shopping"></i>
+                                <strong style="float: right;padding-left: 8px;">Giỏ hàng</strong>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                        <img src="https://matpetfamily.com/wp-content/uploads/2019/11/slider_1.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <img src="https://matpetfamily.com/wp-content/uploads/2019/11/slider_3.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <img src="https://matpetfamily.com/wp-content/uploads/2019/11/slider_4.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="https://matpetfamily.com/wp-content/uploads/2019/11/slider_2.jpg" style="width:100%">
+                            </div>
+                    
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div class="subnav">
+                        <div style="width: 30%;" class="dropdown">
+                            <button class="dropbtn">All Categories</button>
+                            <div class="dropdown-content">
+                              <a href="#">Link 1</a>
+                              <a href="#">Link 2</a>
+                              <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div style="width: 60%;" class="middle">
+                            <input type="text" placeholder="Tìm kiếm...">
+                        </div>
+                        <div style="width: 10%;" class="right">
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="section">
+                <div class="row">
+                    <div class="col col-half-left nav-items">
+                        <p>DANH MỤC SẢN PHẨM</p>
+                        <ul>
+                            <li><a href="#">Balo</a></li>
+                            <li><a href="#">Cát Vệ Sinh</a></li>
+                            <li><a href="#">Chuồng</a></li>
+                            <li><a href="#">Danh Mục Cún</a></li>
+                            <li><a href="#">Danh Mục Mèo</a></li>
+                            <li><a href="#">Dây vòng cổ</a></li>
+                            <li><a href="#">Dịch vụ</a></li>
+                            <li><a href="#">Mỹ Phẩm & Làm Đẹp</a></li>
+                            <li><a href="#">Nệm</a></li>
+                            <li>
+                                <a href="#">
+                                    Phụ Kiện
+                                    <ul>
+                                        <li><a href="#">Áo</a></li>
+                                        <li><a href="#">Bàn Cào</a></li>
+                                        <li><a href="#">Bát</a></li>
+                                        <li><a href="#">Dây Dắt</a></li>
+                                        <li><a href="#">Đồ Chơi</a></li>
+                                        <li><a href="#">Khay vệ sinh</a></li>
+                                        <li><a href="#">Vòng cổ</a></li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li><a href="#">Thực phẩm</a></li>
+                            <li><a href="#">Túi vận chuyển</a></li>
+                        </ul>
+                        <p>GIÁ</p>
+                        <div style="margin-top: 20px;" id="slider" class="slider"></div>
+                        <p>Start: <span id="start"></span></p>
+                        <p>End: <span id="end"></span></p>
+                    </div>
+                    <div class="col col-half-right">
+                        <div class="col col-half-img">
+                            <div class="container2">
+                                <!-- Full-width images with number text -->
+                                <div class="mySlidessub">
+                                    <div class="numbertext">1 / 4</div>
+                                    <img src="./assets/img/goldenbayby.png" style="width:100%">
+                                </div>
+
+                                <div class="mySlidessub">
+                                    <div class="numbertext">2 / 4</div>
+                                    <img src="https://matpetfamily.com/wp-content/uploads/2023/10/photo_2023-10-09_13-38-09-768x1020.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlidessub">
+                                    <div class="numbertext">3 / 4</div>
+                                    <img src="https://matpetfamily.com/wp-content/uploads/2023/10/photo_2023-10-09_13-38-10-768x1017.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlidessub">
+                                    <div class="numbertext">4 / 4</div>
+                                    <img src="https://matpetfamily.com/wp-content/uploads/2023/10/photo_2023-10-09_13-38-11-768x1013.jpg" style="width:100%">
+                                </div>
+
+                                <!-- Next and previous buttons -->
+                                <a class="prev1" onclick="plusSlidessub(-1)">&#10094;</a>
+                                <a class="next1" onclick="plusSlidessub(1)">&#10095;</a>
+
+                                <!-- Thumbnail images -->
+                                <div class="row1">
+                                    <div class="column">
+                                    <img class="demo cursor" src="./assets/img/goldenbayby.png" style="width:100%" onclick="currentSlidesub(1)" alt="The Woods">
+                                    </div>
+                                    <div class="column">
+                                    <img class="demo cursor" src="https://matpetfamily.com/wp-content/uploads/2023/10/photo_2023-10-09_13-38-09-768x1020.jpg" style="width:100%" onclick="currentSlidesub(2)" alt="Cinque Terre">
+                                    </div>
+                                    <div class="column">
+                                    <img class="demo cursor" src="https://matpetfamily.com/wp-content/uploads/2023/10/photo_2023-10-09_13-38-10-768x1017.jpg" style="width:100%" onclick="currentSlidesub(3)" alt="Mountains and fjords">
+                                    </div>
+                                    <div class="column">
+                                    <img class="demo cursor" src="https://matpetfamily.com/wp-content/uploads/2023/10/photo_2023-10-09_13-38-11-768x1013.jpg" style="width:100%" onclick="currentSlidesub(4)" alt="Northern Lights">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="text-align: center;" class="social-network">
+                                <a href="#" class="fa fa-envelope"> <span>0</span></a>
+                                <a href="#" class="fa fa-facebook"> <span>0</span></a>
+                                <a href="#" class="fa fa-twitter"> <span>0</span></a>
+                                <a href="#" class="fa fa-pinterest"> <span>0</span></a>
+                            </div>
+                        </div>
+                        <div class="col col-half-detail about-product">
+                            <h2>GOLDEN ĐỰC BÉO</h2>
+                            <div class="infor">
+                                <p id="newprice">15.000.000₫</p>
+                            </div>
+                            <span>Số lượng: </span>
+                            <input type="number" name="quantity" min="1" max="100" value="1">
+                            <div class="lovelist">
+                                <button><i class="fa-regular fa-heart"></i> Add to Wishlist</button>
+                            </div>
+                            <div class="about">
+                                <p>Mã đơn hàng: <span class="border">SP00508</span></p> 
+                                <p>Tình trạng: <span class="border">Còn hàng</span></p> 
+                                <p>Danh mục: <span class="border">Chó Golden Retriever</span> <span class="border">Danh Mục Cún</span></p> 
+                            </div>
+                        </div>
+                        <div style="display: inline-block;width: 100%;" class="feedback">
+                            <div class="col col-half-left">
+                                <p style="color: #de8ebe;font-weight: 700;padding:8px 20px;">ĐÁNH GIÁ (<span>0</span>)</p>
+                            </div>
+                            <div style="padding: 20px 0;" class="col col-half-right">
+                                <br>
+                                <p>Chưa có đánh giá nào</p>
+                                <p>Chỉ những khách hàng đã đăng nhập và mua sản phẩm này mới có thể đưa ra đánh giá.</p>
+                            </div>
+                        </div>
+                        <div style="display: inline-block;" class="items">
+                            <div class="iphonelist">
+                                <h4>SẢN PHẨM TƯƠNG TỰ</h4>
+                                <div class="itemsgird3">
+                                    <div class="itemsbox">
+                                        <div class="productitems">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/03/d8d840808b3756690f26-e1679717012312-300x300.jpg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:SP00411</p>
+                                                <h3 class="producttittle">SAMOYED DỄ THƯƠNG</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">10.000.000₫</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itemsbox">
+                                        <div class="productitems">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2022/10/E260922B-8153-4BF4-8145-AC992C8C03D2-300x300.jpeg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:SP00348</p>
+                                                <h3 class="producttittle">POODLE ĐỰC SIÊU YÊU</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">13.000.000₫</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itemsbox">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2022/10/E260922B-8153-4BF4-8145-AC992C8C03D2-300x300.jpeg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:SP00196</p>
+                                                <h3 class="producttittle">SAMOYED SIÊU CƯNG</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">14.000.000₫</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <h4>LATEST PRODUCT</h4>
+                                <div class="itemsgird3">
+                                    <div class="itemsbox">
+                                        <div class="productitems">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/10/photo_2023-10-10_13-08-03-2-300x300.jpg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:SP00508</p>
+                                                <h3 class="producttittle">GOLDEN CÁI Ú</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">15.000.000₫</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itemsbox">
+                                        <div class="productitems">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/10/photo_2023-10-10_13-08-03-2-300x300.jpg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:SP00506</p>
+                                                <h3 class="producttittle">COGRI Ú CƯNG</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">35.000.000₫</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itemsbox">
+                                            <div class="picture">
+                                                <img src="https://matpetfamily.com/wp-content/uploads/2023/10/photo_2023-10-06_16-15-14-e1696585306256-300x300.jpg" />
+                                                <a href="#" class="buy-button">Mua hàng</a>
+                                            </div>
+                                            <div class="details">
+                                                <p>ID:SP00505</p>
+                                                <h3 class="producttittle">POODLE NÂU DỄ THƯƠNG</h3>
+                                                <div class="infor">
+                                                    <p id="newprice">13.000.000₫</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+<script src="Project.js"></script>
+</body>
+</html>
